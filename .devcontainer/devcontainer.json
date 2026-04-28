@@ -1,0 +1,16 @@
+{
+    "name": "React-Native-Dev",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "msjsdiag.vscode-react-native",
+                "dbaeumer.vscode-eslint"
+            ]
+        }
+    },
+    "postCreateCommand": "bash .devcontainer/setup-android.sh"
+}
